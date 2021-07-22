@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
 public class Bot {
     private final OkHttpClient httpClient;
     private final Gson gson;
-    private final RequestManager requestManager;
+    private RequestManager requestManager;
 
     private Bot() {
         httpClient = new OkHttpClient.Builder()
@@ -22,7 +22,6 @@ public class Bot {
                         .setLevel(HttpLoggingInterceptor.Level.BODY))
                 .build();
         gson = new Gson();
-        requestManager = new RequestManager(this);
     }
 
     public static void main(String[] args) {
@@ -36,5 +35,11 @@ public class Bot {
 
     public Gson getGson() {
         return gson;
+    }
+
+    public RequestManager getRequestManager() {
+        if (requestManager == null)
+            requestManager = new RequestManager(this);
+        return requestManager;
     }
 }

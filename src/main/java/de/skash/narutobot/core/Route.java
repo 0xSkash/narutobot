@@ -13,7 +13,6 @@ public class Route {
         this.responseType = responseType;
     }
 
-
     public HttpMethod getMethod() {
         return method;
     }

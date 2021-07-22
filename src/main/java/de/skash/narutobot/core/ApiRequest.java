@@ -60,7 +60,7 @@ public class ApiRequest<T> {
                     }
                 });
     }
-    
+
     private Request createRequest() {
         var builder = new Request.Builder();
         builder.url(BASE_URL + route.getRoute());

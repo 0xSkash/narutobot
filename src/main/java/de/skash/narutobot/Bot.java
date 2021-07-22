@@ -1,7 +1,7 @@
 package de.skash.narutobot;
 
 import com.google.gson.Gson;
-import de.skash.narutobot.core.RequestManager;
+import de.skash.narutobot.core.networking.RequestManager;
 import okhttp3.ConnectionPool;
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;

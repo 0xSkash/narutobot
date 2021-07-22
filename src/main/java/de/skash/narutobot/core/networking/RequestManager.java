@@ -1,4 +1,4 @@
-package de.skash.narutobot.core;
+package de.skash.narutobot.core.networking;
 
 import de.skash.narutobot.Bot;
 import okhttp3.RequestBody;

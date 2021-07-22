@@ -1,4 +1,4 @@
-package de.skash.narutobot.core;
+package de.skash.narutobot.core.networking;
 
 import java.lang.reflect.Type;
 

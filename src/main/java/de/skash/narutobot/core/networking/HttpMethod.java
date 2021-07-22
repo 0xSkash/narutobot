@@ -1,4 +1,4 @@
-package de.skash.narutobot.core;
+package de.skash.narutobot.core.networking;
 
 public enum HttpMethod {
     GET,

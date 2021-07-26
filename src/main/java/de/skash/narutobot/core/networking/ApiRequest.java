@@ -1,7 +1,7 @@
 package de.skash.narutobot.core.networking;
 
 import com.google.gson.JsonSyntaxException;
-import de.skash.narutobot.Bot;
+import de.skash.narutobot.feature.Bot;
 import de.skash.narutobot.core.exception.ApiException;
 import okhttp3.*;
 import okhttp3.internal.http.HttpMethod;

@@ -1,7 +1,6 @@
 package de.skash.narutobot;
 
 import com.google.gson.Gson;
-import de.skash.narutobot.core.networking.RequestManager;
 import okhttp3.ConnectionPool;
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
@@ -11,7 +10,6 @@ import java.util.concurrent.TimeUnit;
 public class Bot {
     private final OkHttpClient httpClient;
     private final Gson gson;
-    private RequestManager requestManager;
 
     private Bot() {
         httpClient = new OkHttpClient.Builder()
@@ -33,11 +31,5 @@ public class Bot {
 
     public Gson getGson() {
         return gson;
-    }
-
-    public RequestManager getRequestManager() {
-        if (requestManager == null)
-            requestManager = new RequestManager(this);
-        return requestManager;
     }
 }

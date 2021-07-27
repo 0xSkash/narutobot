@@ -1,5 +1,11 @@
 package de.skash.narutobot.core.model;
 
-public class Ninja {
-    //TODO: Implement Model
+public record Ninja(
+        int id,
+        int health,
+        int strength,
+        int level,
+        int maxLevel,
+        String imageURL
+) {
 }

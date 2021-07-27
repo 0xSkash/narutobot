@@ -22,13 +22,13 @@ public class ApiRequest<T> {
     private final Route route;
     private RequestBody body;
 
-    protected ApiRequest(Bot bot, Route route, RequestBody body) {
+    public ApiRequest(Bot bot, Route route, RequestBody body) {
         this.route = route;
         this.body = body;
         this.bot = bot;
     }
 
-    protected ApiRequest(Bot bot, Route route) {
+    public ApiRequest(Bot bot, Route route) {
         this(bot, route, null);
     }
 
